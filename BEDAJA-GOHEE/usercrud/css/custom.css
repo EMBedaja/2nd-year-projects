@@ -1,0 +1,122 @@
+html{ margin: 0; padding: 0;}
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    background-color: #f4a261;
+}
+#wrapper{
+  width: 98%;
+    min-height: 600px;
+    padding:4px;
+    margin: 0 auto;
+    background-color: #EFE7DA;
+}
+#header{
+    width: 98%;
+    height: 40px;
+    margin: 0 auto;
+}
+#menu{
+    height: 24px;
+    width: 98%;
+}
+#second-submenu{
+    height: 24px;
+    width: 98%;
+}
+#third-submenu{
+   height: 24px;
+    width: 98%;
+    text-align: right;
+}
+#menu a, #second-submenu a, #third-submenu a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#menu a:hover, #second-submenu a:hover, #third-submenu a:hover{
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+#content{
+    width: 96%;
+    padding: 8px;
+    min-height: 600px;
+    margin: 4px auto;
+    background-color: #FFF;
+}
+#subcontent{
+    width: 98%;
+    padding: 4px;
+}
+.move-right{
+    float: right;
+}
+/* FORM */
+.input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#form-block {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+#form-block #form-block-half{
+    width: 45%;
+    float: left;
+    padding: 20px;
+}
+#button-block{
+    width: 95%;
+    padding: 20px;
+    text-align: right;
+}
+/** end */
+
+#data-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data-list td, #data-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#data-list tr:nth-child(even){background-color: #f2f2f2;}
+
+#data-list tr:hover {background-color: #ddd;}
+
+#data-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
