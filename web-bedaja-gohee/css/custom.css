@@ -1,0 +1,502 @@
+html{ margin: 0; padding: 0;}
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    margin: 0;
+       background-color: white;
+}
+.navebar{
+    background-color:#815800;
+    padding: 10px;
+    height: 100%;
+    width: 210px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 10px;
+    width:auto;
+    height:100px;
+}
+
+.navebar ul li {
+    display: inline-block;
+    margin: 10px 23px; 
+   /*padding: 0 20px; */
+    position: relative; 
+}
+
+.navebar ul li a {
+    margin-top: 18px;
+    text-decoration: none;
+    color: #f8d87a;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* straight line hover */
+.navebar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0; /*100% */
+    background: #B89400;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.navebar ul li:hover::after {
+    width: 100%;
+}
+.background{
+  width: 100%;
+  height: 220px;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+
+}
+.main img{
+  width: 220px;
+  height: 220px;
+  margin:35px;
+  margin-top: 70px;
+  transition: transform .2s;
+  border-radius: 40px;
+}
+.main img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.fa-user-alt{
+  font-size:24px;
+  color:#DFD4B0;
+  margin-left: 15px;
+}
+.fa-sign-out-alt{
+  color: #ddbc35;
+  margin-top:150px;
+  padding: 35px;
+  float: left;
+  font-size: 25px;
+}
+span {
+  text-align: center;
+  color:  white;
+  height: 100%;
+  width:200px;
+  border-radius: 25px;
+  position:absolute;
+  top: 130px;
+  left: 30px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
+.container{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header {
+  margin-left:250px;
+  margin-top:-10px
+}
+#second-submenu{
+    margin-left: 230px;
+    height: 24px;
+    width: 98%;
+}
+#third-submenu{
+  margin-top: 15px;
+    width: 98%;
+    text-align: right; 
+   font-weight: 200;
+   margin-left:-100px;
+
+}
+#menu a, #second-submenu a, #third-submenu a{ 
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: #574100;
+    background-color: #f0dfa1;
+    font-weight: 200;
+    padding: 0px 10px;
+    margin:3px;
+    border-radius: 2px ;
+}
+
+#menu a:hover, #second-submenu a:hover, #third-submenu a:hover{
+    text-decoration: none;
+    color: #856a00;
+  
+}
+#content{
+    width: 96%;
+    padding: 8px;
+    min-height: 600px;
+    margin: 4px auto;
+    background-color: #FFF;
+}
+#subcontent{
+    width: 98%;
+    padding: 4px;
+}
+.move-right{
+    float: right;
+}
+ 
+/* FORM */
+.input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: #aa8b0e;
+  color: white;
+  padding: 14px 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#886f0e;
+}
+
+#form-block {
+  border-radius: 10px;
+  background-color: #ecdaa7;
+  padding: 20px;
+  width: 70%;
+  margin-top: 20px;
+    margin-left: 250px;
+  
+
+}
+#form-block-center {
+  color:#522901;
+  list-style-type: none;
+  margin-top: -5px;
+  display: block;
+  text-align: left;
+  margin-left:90px;
+  margin-right:100px;
+  font-weight:bold;
+  width: 450px;
+ 
+}
+#form-block #form-block-half{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#button-block{
+    width: 96%;
+    padding: 20px;
+    text-align: right;
+    
+}
+h3{
+  font-family: 'Secular One', sans-serif;
+}
+/** end */
+
+#data-list {
+  font-family: 'Dongle', sans-serif;
+    margin-top: -10px;
+    margin-left: 220px;
+  border-collapse: collapse;
+  width: 900px;
+
+}
+
+#data-list td{
+  letter-spacing: 0.1px;
+  font-size: 20px;
+  border: 1.9px solid #cfc5a9;
+  padding: 1px 10px;
+}
+#data-list th {
+  font-size: 15px;
+  font-weight: bold;
+  color:#cfc5a9;
+  font-family: 'Neuton', serif;
+  border: 3px solid #cfc5a9;
+  letter-spacing: 0.9px;
+  padding: 6px;
+}
+
+
+#data-list tr:nth-child(even){background-color: #f8f1d3;}
+
+#data-list tr:hover {background-color: #eee1b4;}
+
+#data-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#795303;
+  color: white;
+    border-radius:3px 3px;
+    border: 5px bold black;
+}
+#login-block{ 
+  width: 33%;
+  height: 450px;
+  margin-top:80px;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius: 10px;
+  background-color: #EDEDED;
+  padding: 40px;
+}
+#login-block h4{
+  font-family: 'Tangerine', cursive;
+  font-weight: 100px;
+  font-size: 50px;
+  text-align: center;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#login-block h3{
+  margin-top: -45px;
+  
+}
+#login-block img{
+     margin-left:100px;
+    margin-right:100px;
+    margin-top: -10px;
+    width:auto;
+    height:100px;
+}
+#brand-block {
+  width: 40%;
+  height: 100px;
+  margin: 0 auto;
+  padding:10px;
+  font-size: 18px; 
+  text-transform: uppercase;
+  color: #332d56;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#error_notif {
+  background-color: #fefefe;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+    height: 20px;
+  z-index: 999999999;
+}
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color:#947701;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .confirmbtn, .submitbtn  {
+  margin-left: 40px;
+  margin: 5px;
+  float: right;
+  width: 100px;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.confirmbtn {
+  background-color: #a02820;
+}
+.btn-jsactive{
+  background-color:#e9ca6f;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Add a color to the delete button */
+.submitbtn {
+  background-color: #be9b30;
+}
+
+/* Add padding and center-align text to the container */
+.container ul li{
+  color: #8B4C0F;
+  list-style-type: none;
+  margin-top: -10px;
+  display: block;
+  text-align: left;
+ 
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(235, 210, 123, 35%) ;
+  padding-top: 30px;
+}
+/* Modal Content/Box */
+.modal-content{
+  padding: 20px 20px;
+  padding-right: 110px;
+  padding-left: 70px;
+  background-color: #fefefe;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5% auto 15% auto ; /* 5% from the top, 15% from the bottom and centered */
+  border: 5px solid #8B4C0F;
+  border-radius: 10px;
+  width: 45%; /* Could be more or less, depending on screen size */
+ 
+}
+.container input, select {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the horizontal ruler 
+hr {
+  border: 1px solid #8B4C0F;
+  margin-top: -1px;
+  margin-bottom: 25px;
+  margin-left: 1010px;
+  
+  
+}*/
+
+/* The Modal Close Button (x) */
+.close {
+  float: right;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .confirmbtn, .submitbtn {
+    width: 100%;
+  }
+}
+.btn-box{
+  text-decoration: none;
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+#orders-details table {
+   margin-bottom: 10px;
+  border-collapse: collapse;
+  width: 520px;
+  margin-left: 225px;
+  border: 1.5px solid #a27700;
+ background-color:#e7d6a5;
+}
+#orders-details td{
+  padding:10px;
+  text-align: left;
+}
+.info-text{
+  font-weight: bold;
+}
+/*tr:nth-child(even){background-color: #f2f2f2}*/
